@@ -137,6 +137,13 @@ body {
   font-weight: 550;
   margin-left: 1rem;
 }
+.bottom-header nav ul li a {
+  color: black;
+}
+.bottom-header nav ul li a:hover {
+  cursor: pointer;
+  color: lightslategrey;
+}
 .bottom-header nav ul li:hover {
   cursor: pointer;
   color: lightslategrey;
@@ -372,14 +379,20 @@ footer .events {
   flex-direction: column;
   justify-content: space-around;
   background-color: white;
-  height: 14rem;
-  width: 14rem;
+  height: 17rem;
+  width: 17rem;
   margin-right: 1.5rem;
   margin-top: 1rem;
 }
 footer .events h3, footer .events p {
   color: black;
   font-weight: 600;
+}
+footer .events a {
+  color: black;
+}
+footer .events a:hover {
+  color: white;
 }
 footer span {
   width: auto;

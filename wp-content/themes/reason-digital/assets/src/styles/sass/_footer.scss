@@ -22,14 +22,20 @@ footer{
         flex-direction: column;
         justify-content: space-around;
         background-color: white;
-        height: 14rem;
-        width: 14rem;
+        height: 17rem;
+        width: 17rem;
         margin-right:1.5rem;
         margin-top: 1rem;
     
         h3, p {
             color: black;
             font-weight: 600;
+        }
+        a {
+            color: black;
+            &:hover {
+                color: white;
+            }
         }
         
     }

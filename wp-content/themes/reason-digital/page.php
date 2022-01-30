@@ -4,7 +4,7 @@
 ?>
 <main>
     <div class="top-background">
-        <h2>Get online week 2021</h2>
+        <h2>This displays pages</h2>
         <p>Lorem ipsum dolor,  officia nihil iure voluptates! Ad cum odit repellendus laudantium, nesciunt sapiente voluptatibus at enim. Doloribus, tempora nostrum. Nisi, odio!</p>
         <span>Get involved now!</span>   
     </div>

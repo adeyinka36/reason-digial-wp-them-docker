@@ -10,6 +10,5 @@ function load_external_cdn() {
     wp_enqueue_style('ggogle_font', 'https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap',false);
 }
 
-
  add_action('wp_enqueue_scripts', 'site_files');
  add_action('wp_enqueue_scripts', 'load_external_cdn');

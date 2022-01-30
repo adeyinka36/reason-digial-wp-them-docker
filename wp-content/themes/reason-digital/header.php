@@ -20,12 +20,12 @@
         <nav>
             <span><i class="fas fa-bars"></i></i></span>
             <ul>
-                <li>Home</li>
+                <li><a href="<?= get_home_url()?>">Home</a></li>
                 <li>What we do</li>
                 <li>The digital device</li>
                 <li>Get involved</li>
                 <li>Our network</li>
-                <li>Events</li>
+                <li><a href="<?= get_post_type_archive_link('event')?>">Events</a></li>
             </ul>   
         </nav>
      </div>
