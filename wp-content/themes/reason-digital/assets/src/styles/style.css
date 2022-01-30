@@ -11,6 +11,7 @@
 body {
   max-width: 1500px;
   margin: 0.5rem auto;
+  overflow-x: hidden;
 }
 
 .top-header {
@@ -255,6 +256,145 @@ body {
   .bottom-background {
     display: flex;
   }
+}
+
+section {
+  max-width: 100%;
+  background-color: rgba(169, 169, 169, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+section h2 {
+  margin-top: 1rem;
+}
+section h2, section p {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+section p {
+  font-weight: 500;
+}
+section span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: white;
+  font-weight: 570;
+}
+@media (min-width: 725px) {
+  section span {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 630px) {
+  section span {
+    flex-direction: column;
+    padding-top: 2.2rem;
+  }
+}
+@media (max-width: 630px) {
+  section span * {
+    margin-bottom: 1.2rem;
+    margin-top: 0.3rem;
+  }
+}
+section span input {
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid blue;
+  color: blue;
+}
+section span input:hover {
+  cursor: pointer;
+  border-bottom: 1px solid purple;
+}
+section span input:focus {
+  outline: none;
+}
+@media (min-width: 725px) {
+  section span input {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+section span button {
+  color: white;
+  font-weight: 600;
+  padding: 0.7rem;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  transition: 0.25s;
+  background-color: red;
+  border: none;
+}
+section span button:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #505050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.25rem;
+}
+footer h2 {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+footer p {
+  color: white;
+}
+footer .events-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+footer .events {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+  height: 14rem;
+  width: 14rem;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+}
+footer .events h3, footer .events p {
+  color: black;
+  font-weight: 600;
+}
+footer span {
+  width: auto;
+  color: black;
+  font-weight: 600;
+  padding: 0.6rem;
+  border-radius: 20px;
+  transition: 0.25s;
+  background-color: white;
+  border: 1px solid black;
+}
+footer span:hover {
+  color: white;
+  background-color: #505050;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,14 +20,14 @@
     </div>    
 </main>
 <section>
-    <h2>How can we help you?</p>
+    <h2>How can we help you?</h2>
     <p>Lorem ipsum dolor sit,  soluta nesciunt magni velit deleniti doloribus at veniam.</p>
-    <span>I am <input type="dropdown"></input> and I want <input type="dropdown"> <button>start now</button>
+    <span>I am <input type="dropdown" placeholder="select &#xF078;" style="font-family:Arial, FontAwesome" /> and I want <input type="dropdwon" placeholder="select &#xF078;" style="font-family:Arial, FontAwesome" /> <button>start now</button></span>
 </section>
 
  <?php
  get_footer();
  ?>
  <style>
-    
+   
 </style>

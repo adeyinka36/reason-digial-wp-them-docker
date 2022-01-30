@@ -1,0 +1,51 @@
+footer{
+    background-color: rgba(80,80,80);
+    @include flex();
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1.25rem;
+    h2{
+        font-size: 1.2rem;
+        color: white;
+        margin-bottom: 1rem;
+    }
+    p {
+        color: white;
+    }
+    .events-con {
+        @include flex();
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+    .events {
+        @include flex();
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: white;
+        height: 14rem;
+        width: 14rem;
+        margin-right:1.5rem;
+        margin-top: 1rem;
+    
+        h3, p {
+            color: black;
+            font-weight: 600;
+        }
+        
+    }
+    span {
+        width: auto;
+        color: black;
+        font-weight: 600;
+        padding:.6rem;
+        border-radius: 20px;
+        transition: .25s;
+        background-color: white;
+        border: 1px solid black;
+        &:hover {
+            color: white;
+            background-color: rgba(80,80,80);
+            cursor: pointer;
+        }
+    }
+}
