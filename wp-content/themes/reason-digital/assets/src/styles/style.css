@@ -157,4 +157,104 @@ body {
   }
 }
 
+.top-background {
+  height: 45vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../images/library.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+}
+@media (min-width: 725px) {
+  .top-background {
+    align-items: flex-start;
+    padding-left: 1.5rem;
+  }
+}
+.top-background h2 {
+  background-color: darkgrey;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+@media (max-width: 350px) {
+  .top-background h2 {
+    font-size: 1.6rem;
+  }
+}
+.top-background p {
+  background-color: rgba(169, 169, 169, 0.9);
+  color: black;
+  padding: 1rem;
+  max-width: 80%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.top-background span {
+  color: orange;
+  font-weight: 600;
+  padding: 0.8rem;
+  border-radius: 20px;
+  transition: 0.25s;
+  background-color: white;
+}
+.top-background span:hover {
+  color: white;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.bottom-background .left {
+  background-image: url("../images/library-people.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+  width: 100%;
+  margin-top: 0;
+}
+.bottom-background .right {
+  position: relative;
+  margin-top: 0;
+  background-image: none;
+  background-color: rgba(80, 80, 80, 0.9);
+}
+.bottom-background .right p, .bottom-background .right h2, .bottom-background .right span {
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+}
+.bottom-background .right span {
+  border: 3px solid white;
+}
+.bottom-background .right span:hover {
+  color: rgba(80, 80, 80, 0.9);
+  background-color: white;
+  cursor: pointer;
+}
+@media (min-width: 725px) {
+  .bottom-background .right span {
+    margin-left: 1rem;
+  }
+}
+.bottom-background .right .fas {
+  position: absolute;
+  right: -70px;
+  bottom: -70px;
+  font-size: 20rem;
+  color: white;
+  opacity: 0.1;
+}
+@media (min-width: 725px) {
+  .bottom-background {
+    display: flex;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,86 @@
+.top-background {
+    height: 45vh;
+    width: 100%;
+    @include flex();
+    flex-direction: column;
+    background-image: url('../images/library.jpg');
+    @include background();
+    margin-top: 1rem;
+    @media (min-width: 725px) {
+        align-items: flex-start;
+        padding-left: 1.5rem;
+    }
+    h2 {
+        background-color: darkgrey;
+        padding: 1rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        @media (max-width: 350px) {
+            font-size: 1.6rem;
+        }
+    }
+    p {
+        background-color: rgba(169,169,169,.9);
+        color: black;
+        padding: 1rem;
+        max-width:80%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    span {
+        color: orange;
+        font-weight: 600;
+        padding:.8rem;
+        border-radius: 20px;
+        transition: .25s;
+        background-color: white;
+        &:hover {
+            color: white;
+            background-color: orange;
+            cursor: pointer;
+        }
+    }
+}
+.bottom-background {
+    .left{
+        background-image: url('../images/library-people.jpg');
+        @include background();
+        height: 45vh;
+        width: 100%;
+        margin-top: 0;
+    }
+    .right {
+        position: relative;
+        margin-top: 0;
+        background-image: none;
+        background-color: rgba(80,80,80,.9);
+        p, h2, span {
+            color: white;
+            background-color: rgba(0,0,0,0);
+        }
+        span {
+            border: 3px solid white;
+            &:hover {
+                color: rgba(80,80,80,.9);;
+                background-color: white;
+                cursor: pointer;
+            }
+            @media (min-width: 725px) {
+                margin-left: 1rem;
+            }
+        }
+        .fas {
+            position: absolute;
+            right: -70px;
+            bottom: -70px;
+            font-size: 20rem;
+            color: white;
+            opacity: .1;
+        }
+    }
+    @media (min-width: 725px) {
+        display: flex;
+    }
+}
